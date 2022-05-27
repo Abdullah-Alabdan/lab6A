@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <body>
+
+    <label>Temperature in Fahrenheit: </label>
+<input id="tFah_id" type="text"><br>
+
+<button type="button"onclick="convert();"> Convert to Celsius </button><br>
+
+
+<p>Temperature in Celsius: <span id="tCel_id"></span></p>
+
+<p>Dc=(Df-32)*5/9</p>
+<script type="text/javascript">
+function convert(){
+ var ftemp = document.getElementById("tFah_id").value;
+ var ctemp = (ftemp - 32)*5/9;
+ document.getElementById('tCel_id').innerHTML = ctemp;
+}
+</script>
+
+  </body>
+</html>
